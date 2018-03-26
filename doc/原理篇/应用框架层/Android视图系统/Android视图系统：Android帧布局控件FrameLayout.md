@@ -1,4 +1,4 @@
-# Android视图系统：Android图片控件ImageView
+# Android视图系统：Android帧布局控件FrameLayout
 
 作者：[郭孝星](https://github.com/guoxiaoxing)
 

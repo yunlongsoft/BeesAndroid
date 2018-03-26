@@ -1,4 +1,4 @@
-# Android视图系统：Android图片控件ImageView
+# Android视图系统：Android线性布局控件LinearLayout
 
 作者：[郭孝星](https://github.com/guoxiaoxing)
 

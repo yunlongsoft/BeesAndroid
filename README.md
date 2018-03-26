@@ -2,10 +2,10 @@
 
 ## 功能介绍
 
-[![License](https://img.shields.io/github/issues/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid) 
-[![Stars](https://img.shields.io/github/stars/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid) 
-[![Stars](https://img.shields.io/github/forks/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid) 
-[![Forks](https://img.shields.io/github/issues/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid) 
+[![License](https://img.shields.io/github/issues/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid)
+[![Stars](https://img.shields.io/github/stars/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid)
+[![Stars](https://img.shields.io/github/forks/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid)
+[![Forks](https://img.shields.io/github/issues/BeesAndroid/BeesAndroid.svg)](https://jitpack.io/#BeesAndroid/BeesAndroid)
 
 BeesAndroid开源技术小组正式成立啦，Bees，即蜜蜂，取义分享、合作与奉献的意思，这也是BeesAndroid小组的宗旨，我们第一个团体项目BeesAndroid也于2018年3月6日同步上线，该项目的前
 身是[android-open-source-project-analysis](https://github.com/guoxiaoxing/android-open-source-project-analysis)，这个项目提供了一系列的Android系统源码分析文章，收
@@ -21,9 +21,9 @@ BeesAndroid开源技术小组正式成立啦，Bees，即蜜蜂，取义分享�
 
 **代码版本**
 
-- 细分版本：N6F26U	
-- 分支：android-7.1.1_r28	
-- 版本：Nougat	
+- 细分版本：N6F26U
+- 分支：android-7.1.1_r28
+- 版本：Nougat
 - 支持设备：Nexus 6
 
 **分析思路**
@@ -38,6 +38,8 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 的优化，但问题的本质没有改变，我们要善于抓住本质。
 - 要善于去粗存精，Android Framework也是人写的，有精华也有糟粕，并不是每行代码你都需要问个为什么，很多时候没有那么多为什么，只是当时那种情况下就那样设计了。但是
 对于关键函数我们要去深究它的实现细节。
+
+👉注：文章整理中，如果想查阅过往文章可以参见[android-open-source-project-analysis](https://github.com/guoxiaoxing/android-open-source-project-analysis)。
 
 在正式阅读本系列文章之前，请先阅读导读相关内容，这会帮助你更加快捷的理解文章内容。
 
@@ -63,7 +65,7 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
 |[Android视图系统：Android视图系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android视图系统概述.md)| 编辑中|  |  |
-|[Android视图系统：Android应用视图管理者Window](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android应用视图管理者Window.md)| 编辑中|  |  |
+|[Android视图系统：Android应用窗口Window](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android应用窗口Window.md)| 编辑中|  |  |
 |[Android视图系统：Android应用视图View](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android应用视图View.md)| 编辑中|  |  |
 |[Android视图系统：Android应用视图组ViewGroup](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android应用视图组ViewGroup.md)| 编辑中|  |  |
 |[Android视图系统：Android帧布局控件FrameLayout](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android视图系统/Android视图系统：Android帧布局控件FrameLayout.md)| 编辑中|  |  |
@@ -88,77 +90,74 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
 |[Android组件系统：Android组件系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android组件系统概述.md)| 编辑中|  |  |
+|[Android组件系统：Android组件注册表AndroidManifest](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android组件注册表AndroidManifest.md)| 编辑中|  |  |
 |[Android组件系统：Android应用上下文Context](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android应用上下文Context.md)| 编辑中|  |  |
 |[Android组件系统：Android视图容器Activity](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android视图容器Activity.md)| 编辑中|  |  |
 |[Android组件系统：Android视图片段Fragment](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android视图片段Fragment.md)| 编辑中|  |  |
 |[Android组件系统：Android后台服务Service](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android后台服务Service.md)| 编辑中|  |  |
-|[Android组件系统：Android内容提供者ContentProvider](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android内容提供者ContentProvider.md)| 校对中| [wusp](https://github.com/wusp) |  |
+|[Android组件系统：Android数据提供者ContentProvider](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android数据提供者ContentProvider.md)| 校对中| [wusp](https://github.com/wusp) | [郭孝星](https://github.com/guoxiaoxing) |
 |[Android组件系统：Android广播接收者BroadcastReceiver](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android组件系统/Android组件系统：Android广播接收者BroadcastReceiver.md)| 编辑中|  |  |
 
 **Android资源系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|[Android资源系统：Android资源系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/Android资源系统概述.md)| 编辑中|  |  |
-|[Android资源系统：应用资源Resouces](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/应用资源Resouces.md)| 编辑中|  |  |
-|[Android资源系统：资源管理器AssetManager](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/资源管理器AssetManager.md)| 编辑中|  |  |
+|[Android资源系统：Android资源系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/Android包系统：Android资源系统概述.md)| 编辑中|  |  |
+|[Android资源系统：应用资源Resources](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/Android包系统：应用资源Resources.md)| 编辑中|  |  |
+|[Android资源系统：资源管理器AssetManager](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android资源系统/Android包系统：资源管理器AssetManager.md)| 编辑中|  |  |
 
 **Android包系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|[Android包系统：Android包系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android资源系统概述.md)| 编辑中|  |  |
-|[Android包系统：APK解析器PackageParser](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/APK解析器PackageParser.md)| 编辑中|  |  |
-|[Android包系统：APK的打包流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/APK的打包流程.md)| 编辑中|  |  |
-|[Android包系统：APK的安装流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/APK的安装流程.md)| 编辑中|  |  |
-|[Android包系统：APK的加载流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/APK的加载流程.md)| 编辑中|  |  |
+|[Android包系统：Android包系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android包系统：Android资源系统概述.md)| 编辑中|  |  |
+|[Android包系统：APK解析器PackageParser](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android包系统：APK解析器PackageParser.md)| 编辑中|  |  |
+|[Android包系统：APK的打包流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android包系统：APK的打包流程.md)| 编辑中|  |  |
+|[Android包系统：APK的安装流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android包系统：APK的安装流程.md)| 编辑中|  |  |
+|[Android包系统：APK的加载流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android包系统/Android包系统：APK的加载流程.md)| 编辑中|  |  |
 
 **Android应用通信系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android应用通信系统：Android应用通信系统概述| | |
-|Android应用通信系统：Android线程通信桥梁Handler| | |
+|[Android应用通信系统：Android应用通信系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android应用通信系统/Android应用通信系统：Android应用通信系统概述.md)| 编辑中|  |  |
+|[Android应用通信系统：线程通信的桥梁Handler](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android应用通信系统/Android应用通信系统：线程通信的桥梁Handler.md)| 编辑中|  |  |
+|[Android应用通信系统：局域广播LocalBroadcastReceiver](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android应用通信系统/Android应用通信系统：局域广播LocalBroadcastReceiver.md)| 编辑中|  |  |
 
 **Android动画系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
 |Android动画系统：Android动画系统概述| | |
 
 **Android多媒体系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
 |Android多媒体系统：Android多媒体系统概述| | |
 
 **Android数据库系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android数据库系统：Android数据库系统概述|编辑中| [wusp](https://github.com/wusp)| |
+|[Android数据库系统：Android数据库系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/应用框架层/Android数据库系统/Android数据库系统：Android数据库系统概述.md)| 编辑中|  |  |
 
 ### 进程通信层
 
-**Binder进程通信框架**
+**Binder进程通信系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Binder进程通信框架：服务管理器ServiceManager| | |
-|Binder进程通信框架：BpBinder与BBinder| | |
-|Binder进程通信框架：Binder驱动| | |
+|Binder进程通信系统：Binder进程通信系统概述| | | |
+|Binder进程通信系统：服务管理器ServiceManager| | |
+|Binder进程通信系统：BpBinder与BBinder| | |
+|Binder进程通信系统：Binder驱动| | |
 
-**Socket进程通信框架**
+**Socket进程通信系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Socket进程通信框架：Socket| | |
+|Socket进程通信系统：Socket进程通信系统概述| | | |
 
 ### 系统服务层
 
@@ -166,21 +165,21 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android组件管理服务：Android组件管理服务概述| | | |
 |Android组件管理服务：ActivityServiceManager| | |
 
 **Android窗口管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android窗口管理服务：Android窗口管理服务概述| | | |
 |Android窗口管理服务：WindowServiceManager| | |
 
 **Android图形绘制服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android图形绘制服务：Android图形绘制服务概述| | | |
 |Android图形绘制服务：SurfaceFlinger| | |
 |Android图形绘制服务：Android布局解析器LayoutInflater| | |
 
@@ -195,35 +194,35 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android反馈管理服务：Android反馈管理服务概述| | | |
 |Android反馈管理服务：AccessibilityManagerService| | |
 
 **Android壁纸管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android壁纸管理服务：Android壁纸管理服务概述| | | |
 |Android壁纸管理服务：WallpaperManagerService| | |
 
 **Android搜索管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android搜索管理服务：Android搜索管理服务概述| | | |
 |Android搜索管理服务：SearchManagerService| | |
 
 **Android通知管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android搜索管理服务：Android搜索管理服务概述| | | |
 |Android通知管理服务：NotificationManagerService| | |
 
 **Android定位管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android定位管理服务：Android定位管理服务概述| | | |
 |Android定位管理服务：LocationManagerService| | |
 
 **Android输入法管理服务**
@@ -237,42 +236,42 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android电源管理服务：Android电源管理服务概述| | | |
 |Android电源管理服务：PowerManagerService| | |
 
 **Android闹钟管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android电源管理服务：Android电源管理服务概述| | | |
 |Android闹钟管理服务：AlarmManagerService| | |
 
 **Android网络管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android闹钟管理服务：NetworkManagementService| | |
+|Android网络管理服务：Android网络管理服务概述| | | |
+|Android网络管理服务：ConnectivityService| | |
 
 **Android账户管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android账户管理服务：Android账户管理服务概述| | | |
 |Android账户管理服务：AccountManagerService| | |
 
 **Android设备存储管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android设备存储管理服务：Android设备存储管理服务概述| | | |
 |Android设备存储管理服务：DeviceStorageMonitorService| | |
 
 **Android备份管理服务**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android设备存储管理服务：Android设备存储管理服务概述| | | |
 |Android备份管理服务：BackupManagerService| | |
 
 ### 运行时层
@@ -281,7 +280,7 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|JVM虚拟机：JVM虚拟机概述| | | |
 |JVM虚拟机：Java虚拟机概述| | |
 |JVM虚拟机：Java类加载机制| | |
 
@@ -289,7 +288,7 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|ART虚拟机：ART虚拟机概述| | | |
 |ART虚拟机：Android ART虚拟机概述| | |
 
 ### 硬件抽象层
@@ -300,15 +299,16 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android进程系统：进程的创建、启动与调度流程| | |
-|Android进程系统：线程与线程池| | |
+|[Android进程系统：Android进程系统概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/内核层/Android进程系统/Android进程系统：Android进程系统概述.md)| 编辑中|  |  |
+|[Android进程系统：进程的创建、启动与调度流程](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/内核层/Android进程系统/Android进程系统：进程的创建、启动与调度流程.md)| 编辑中|  |  |
+|[Android进程系统：线程与线程池](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/内核层/Android进程系统/Android进程系统：线程与线程池.md)| 编辑中|  |  |
+|[Android进程系统：AIDL](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/原理篇/内核层/Android进程系统/Android进程系统：AIDL.md)| 编辑中|  |  |
 
 **Android内存系统**
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
+|Android内存系统：Android内存系统| | | |
 |Android内存系统：内存管理系统| | |
 |Android内存系统：Ashmem匿名共享内存系统| | |
 
@@ -318,41 +318,40 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android工程化实践：项目架构| | |
-|Android工程化实践：编译系统| | |
-|Android工程化实践：插件化| | |
-|Android工程化实践：热修复| | |
-|Android工程化实践：模块化| | |
-|Android工程化实践：VCS工作流| | |
-|Android工程化实践：持续集成| | |
-|Android工程化实践：编码规范| | |
-|Android工程化实践：自动化测试| | |
-|Android工程化实践：自动化埋点与数据采集| | |
+|[Android工程化实践：Android工程化实践概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：Android工程化实践概述.md)| 编辑中|  |  |
+|[Android工程化实践：项目架构](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：项目架构.md)| 编辑中|  |  |
+|[Android工程化实践：编译系统](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：编译系统.md)| 编辑中|  |  |
+|[Android工程化实践：插件化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：插件化.md)| 编辑中|  |  |
+|[Android工程化实践：热修复](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：热修复.md)| 编辑中|  |  |
+|[Android工程化实践：模块化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：模块化.md)| 已完成| [郭孝星](https://github.com/guoxiaoxing)  | [郭孝星](https://github.com/guoxiaoxing)  |
+|[Android工程化实践：VCS工作流](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：VCS工作流.md)| 编辑中|  |  |
+|[Android工程化实践：持续集成](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：持续集成.md)| 编辑中|  |  |
+|[Android工程化实践：编码规范](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：编码规范.md)| 编辑中|  |  |
+|[Android工程化实践：自动化测试](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：自动化测试.md)| 编辑中|  |  |
+|[Android工程化实践：日志系统](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：日志系统.md)| 编辑中|  |  |
+|[Android工程化实践：自动化埋点与数据采集](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/工程化实践/Android工程化实践：自动化埋点与数据采集.md)| 编辑中|  |  |
 
 ### Android应用优化
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android应用优化：优化概述| | |
-|Android应用优化：启动优化| | |
-|Android应用优化：界面优化| | |
-|Android应用优化：内存优化| | |
-|Android应用优化：图像优化| | |
-|Android应用优化：网络优化| | |
-|Android应用优化：并发优化| | |
-|Android应用优化：优化工具| | |
+|[Android应用优化：优化概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：优化概述.md)| 编辑中|  |  |
+|[Android应用优化：启动优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：启动优化.md)| 编辑中|  |  |
+|[Android应用优化：界面优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：界面优化.md)| 编辑中|  |  |
+|[Android应用优化：内存优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：内存优化.md)| 编辑中|  |  |
+|[Android应用优化：图像优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：图像优化.md)| 编辑中|  |  |
+|[Android应用优化：网络优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：网络优化.md)| 编辑中|  |  |
+|[Android应用优化：并发优化](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：并发优化.md)| 编辑中|  |  |
+|[Android应用优化：优化工具](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/应用优化/Android应用优化：优化工具.md)| 编辑中|  |  |
 
 ### Android界面开发
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
-|Android界面开发：View自定义概述| | |
-|Android界面开发：View自定义布局篇| | |
-|Android界面开发：View自定义绘制篇| | |
-|Android界面开发：View自定义交互篇| | |
+|[Android界面开发：View自定义概述](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/界面开发/Android界面开发：View自定义概述.md)| 编辑中|  |  |
+|[Android界面开发：View自定义布局篇](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/界面开发/Android界面开发：View自定义布局篇.md)| 编辑中|  |  |
+|[Android界面开发：View自定义绘制篇](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/界面开发/Android界面开发：View自定义绘制篇.md)| 编辑中|  |  |
+|[Android界面开发：View自定义交互篇](https://github.com/BeesAndroid/BeesAndroid/blob/master/doc/实践篇/界面开发/Android界面开发：View自定义交互篇.md)| 编辑中|  |  |
 
 ### Android多媒体开发
 
@@ -365,14 +364,12 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
 |Android网络编程：网络编程实践| | |
 
 ### Android混合编程
 
 |文章                                                      |文章状态                            |作者                               |校对                              |
 |:--------------------------------------------------------|:----------------------------------|:----------------------------------|:--------------------------------|
-|Android视图系统：Android视图系统概述| | | |
 |Android混合编程：WebView实践| | |
 
 > 欢迎关注我们的微信公众号，新文章会第一时间发布到掘金博客与微信公众平台，我们也有自己的交流群，下方是QQ交流群，微信群已满，可以加我微信 allenwells 邀请入群。
@@ -384,4 +381,3 @@ Android是一个庞大的系统，Android Framework只是对系统的一个封�
 QQ交流群
 
 <img src="https://github.com/BeesAndroid/BeesAndroid/raw/master/art/qq_2.png" width="300"/>
-

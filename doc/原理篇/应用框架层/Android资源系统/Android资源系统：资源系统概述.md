@@ -1,4 +1,4 @@
-# Android视图系统：Android图片控件ImageView
+# Android资源系统：资源系统概述
 
 作者：[郭孝星](https://github.com/guoxiaoxing)
 
